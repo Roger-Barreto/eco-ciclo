@@ -10,7 +10,7 @@ export default function NavBar() {
           flex flex-col items-center 
           w-full bg-[#000000] bg-opacity-30 
           border-b border-secondary border-opacity-40
-          transition-all duration-300 ease-in-out overflow-hidden
+          transition-all duration-300 ease-in-out overflow-hidden z-50 backdrop-blur-[3px]           
           `}>
       <div className="flex items-center justify-between px-4 min-h-nav h-nav max-w-screen-xl w-full">
         <img src="horizontal-logo.svg" alt="logo" />
