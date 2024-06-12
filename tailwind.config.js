@@ -1,23 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 
-import tailgridsPlugin from 'node_modules/tailgrids/plugin';
+import tailgridsPlugin from 'tailgrids/plugin';
 
 export default {
   darkMode: 'class',
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    fontFamily: {
-      sans: ['Poppins', 'sans-serif'],
-    },
-    colors: {
-      primary: '#13C296',
-      secondary: '#D0DB97',
-      textPrimary: '#FFFFFFFF',
-      textSecondary: '#B6B8B7',
-    },
     extend: {
       fontFamily: {
         nunito: ['Nunito Sans', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      colors: {
+        primary: '#13C296',
+        secondary: '#D0DB97',
+        'text-primary': '#FFFFFFFF',
+        'text-secondary': '#B6B8B7',
+        'background-dark': '#0D0E0D',
+      },
+      spacing: {
+        nav: '80px',
       },
     },
   },
