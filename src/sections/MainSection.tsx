@@ -47,7 +47,7 @@ export default function MainSection() {
                 allowFullScreen></iframe>
               <div className="flex items-center gap-2 absolute -bottom-10">
                 <Icon icon="bi:play-circle" className="w-6 h-6 text-white" />
-                <p className="text-white text-[12px]">
+                <p className="text-white text-[14px]">
                   <span className="text-primary">Assista ao vídeo</span> explicativo sobre a separação do lixo
                 </p>
               </div>
