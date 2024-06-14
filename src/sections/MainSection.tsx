@@ -6,12 +6,12 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 export default function MainSection() {
   return (
     <section
-      className="w-full h-screen bg-cover bg-center pt-nav"
+      className="h-max w-full lg:h-screen bg-cover bg-center pt-nav bg-no-repeat"
       style={{ backgroundImage: 'url("main-section-bg.webp")' }}>
       <img src="star.svg" alt="star" className="absolute top-0 left-0 w-215 h-215 z-0" />
       <img src="star_2.svg" alt="star" className="absolute bottom-0 right-0 w-269 h-269 z-0" />
 
-      <div className="flex lg:items-center lg:justify-center w-full h-full pb-nav">
+      <div className="pb-0 flex lg:items-center lg:justify-center w-full h-full lg:pb-nav">
         <Container>
           <div className="flex flex-col lg:flex-row gap-[10vw] w-full lg:items-center">
             <div className="flex flex-col max-w-[427px] w-full">
@@ -35,17 +35,19 @@ export default function MainSection() {
                 </Button>
               </div>
             </div>
-            <div className="aspect-video rounded-md w-full h-full bg-gray-3 p-2 flex items-center justify-center relative">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/3zAsyYgSaxU"
-                title="Lixo?"
-                className="rounded-md bg-gray-3"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen></iframe>
-              <div className="flex items-center gap-2 absolute -bottom-10">
+            <div className="w-full h-auto flex items-center justify-center relative flex-col">
+              <div className="aspect-video rounded-md w-full h-full bg-gray-3 p-2 flex items-center justify-center relative flex-col">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/3zAsyYgSaxU"
+                  title="Lixo?"
+                  className="rounded-md bg-gray-3"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen></iframe>
+              </div>
+              <div className="mt-4 mb-10 flex items-center gap-2 lg:absolute lg:-bottom-10 lg:mt-0 lg:mb-0">
                 <Icon icon="bi:play-circle" className="w-6 h-6 text-white" />
                 <p className="text-white text-[14px]">
                   <span className="text-primary">Assista ao vídeo</span> explicativo sobre a separação do lixo

@@ -33,7 +33,7 @@ export default function NavBar() {
         </div>
       </div>
 
-      <div className={`flex flex-col px-4 pb-8 pt-4 w-full h-auto`}>
+      <div className={`flex flex-col px-4 pb-8 pt-4 w-full h-auto bg-[#080F0B]`}>
         <ul className={`flex flex-col gap-8 font-poppins font-normal`}>
           <li className="hover:text-secondary">
             <a href="#">Estatíscas</a>
