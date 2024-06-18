@@ -27,5 +27,29 @@ export default {
       },
     },
   },
-  plugins: [tailgridsPlugin],
+  plugins: [
+    tailgridsPlugin,
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-stroke-0': {
+          '-webkit-text-stroke-width': '0',
+        },
+        '.text-stroke-1': {
+          '-webkit-text-stroke-width': '1px',
+        },
+        '.text-stroke-2': {
+          '-webkit-text-stroke-width': '2px',
+        },
+        '.text-stroke-primary': {
+          '-webkit-text-stroke-color': '#13C296',
+        },
+        '.text-stroke-secondary': {
+          '-webkit-text-stroke-color': '#D0DB97',
+        },
+        // Add more colors or widths as needed
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 };

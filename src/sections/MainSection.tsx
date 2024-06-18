@@ -4,12 +4,24 @@ import Button from '../components/Button';
 import { Icon } from '@iconify/react/dist/iconify.js';
 
 export default function MainSection() {
+  const onClickScrollDown = () => {
+    document.getElementById('second-section')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section
-      className="h-max w-full lg:h-screen bg-cover bg-center pt-nav bg-no-repeat"
+      className="h-max w-full lg:h-screen bg-cover bg-center pt-nav bg-no-repeat relative"
       style={{ backgroundImage: 'url("main-section-bg.webp")' }}>
-      <img src="star.svg" alt="star" className="absolute top-0 left-0 w-215 h-215 z-0" />
-      <img src="star_2.svg" alt="star" className="absolute bottom-0 right-0 w-269 h-269 z-0" />
+      <img src="star-1.svg" alt="star" className="absolute top-0 left-0 w-215 h-215 z-0" />
+      <img src="star-2.svg" alt="star" className="absolute bottom-0 right-0 w-269 h-269 z-0" />
+      <Icon
+        onClick={onClickScrollDown}
+        role="button"
+        icon="iconamoon:arrow-down-6-circle-light"
+        className="w-10 h-10 text-white absolute left-1/2 right-1/2 -translate-x-1/2 bottom-6 z-10
+        cursor-pointer animate-bounce opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out
+        "
+      />
 
       <div className="pb-0 flex lg:items-center lg:justify-center w-full h-full lg:pb-nav">
         <Container>
@@ -28,10 +40,10 @@ export default function MainSection() {
               </p>
               <div className="flex flex-row gap-4 mt-8 flex-wrap">
                 <Button variant="semiRounded" color="white" className="flex-1 min-w-max">
-                  Saiba mais
+                  Como reciclar
                 </Button>
                 <Button variant="outlined" color="primary" className="flex-1 min-w-max">
-                  Como reciclar
+                  Saiba mais
                 </Button>
               </div>
             </div>
