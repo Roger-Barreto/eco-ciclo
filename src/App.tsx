@@ -1,6 +1,6 @@
 import NavBar from './components/Navbar';
 import MainSection from './sections/MainSection';
-import SecondSection from './sections/SecondSection';
+import SecondSection from './sections/StatisticsSection';
 
 function App() {
   return (

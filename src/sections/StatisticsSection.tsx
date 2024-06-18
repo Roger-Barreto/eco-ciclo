@@ -1,9 +1,11 @@
 import Container from '../components/Container';
 
-export default function SecondSection() {
+export default function StatisticsSection() {
   return (
-    <section id="second-section" className="h-max w-full lg:h-screen bg-cover bg-center pt-nav bg-no-repeat relative">
-      <div className="pb-0 flex lg:items-center lg:justify-center w-full h-full lg:pb-nav">
+    <section
+      id="statistics-section"
+      className="h-max w-full lg:h-screen bg-cover bg-center pt-nav bg-no-repeat relative">
+      <div className="pb-14 flex lg:items-center lg:justify-center w-full h-full lg:pb-nav">
         <Container clasName="lg:flex lg:flex-col lg:items-center pt-10 overflow-x-overlay">
           <div className="block lg:hidden pb-6 w-full">
             <h2 className="text-white text-4xl text-left w-full font-normal font-poppins ">Estatísticas</h2>

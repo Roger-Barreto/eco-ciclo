@@ -5,12 +5,12 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 
 export default function MainSection() {
   const onClickScrollDown = () => {
-    document.getElementById('second-section')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('statistics-section')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <section
-      className="h-max w-full lg:h-screen bg-cover bg-center pt-nav bg-no-repeat relative"
+      className="h-max w-full lg:h-screen bg-cover bg-center pt-nav bg-no-repeat relative pb-14 lg:pb-0"
       style={{ backgroundImage: 'url("main-section-bg.webp")' }}>
       <img src="star-1.svg" alt="star" className="absolute top-0 left-0 w-215 h-215 z-0" />
       <img src="star-2.svg" alt="star" className="absolute bottom-0 right-0 w-269 h-269 z-0" />
