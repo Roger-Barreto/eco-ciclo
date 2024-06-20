@@ -53,6 +53,18 @@ export default function TypesTrash() {
 						name="Industrial"
 						description="Gerado pelo setor secundário, ou seja, as indústrias. Esse tipo de lixo é caracterizado por resíduos como: gases, produtos químicos, óleos, cinzas, metais, vidros, plásticos, tecidos, papéis, borracha, madeira."
 					/>
+					<TrashInfo
+						name="Eletrônico"
+						description="Composto pelo descarte dos aparelhos elétricos e eletrônicos como rádios, computadores, televisores, celulares, fios, baterias, carregadores, dentre outros."
+					/>
+					<TrashInfo
+						name="Radioativo"
+						description="Esse tipo de lixo é altamente tóxico por conter urânio (e outros metais pesados). Ele é produzido por atividades que envolvam elementos radioativos como indústrias nucleares, serviços de saúde, dentre outros."
+					/>
+					<TrashInfo
+						name="Espacial"
+						description="É gerado pelos materiais lançados no espaço como robôs, foguetes, satélites artificiais. A poluição espacial tem sido um dos grandes problemas da modernidade, pois eles podem cair na atmosfera."
+					/>
 				</Slider>
 			</div>
 		</section>
