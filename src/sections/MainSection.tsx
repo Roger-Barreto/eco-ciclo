@@ -8,8 +8,13 @@ export default function MainSection() {
     document.getElementById('statistics-section')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+	const scrollDownMap = () => {
+    document.getElementById('where-section')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section
+			id="start-section"
       className="h-max w-full lg:h-screen bg-cover bg-center pt-nav bg-no-repeat relative pb-14 lg:pb-0"
       style={{ backgroundImage: 'url("main-section-bg.webp")' }}>
       <img src="star-1.svg" alt="star" className="absolute top-0 left-0 w-215 h-215 z-0" />
@@ -39,11 +44,13 @@ export default function MainSection() {
                 sustentáveis e econômicas.
               </p>
               <div className="flex flex-row gap-4 mt-8 flex-wrap">
-                <Button variant="semiRounded" color="white" className="flex-1 min-w-max">
-                  Como reciclar
+                <Button onClick={scrollDownMap} variant="semiRounded" color="white" className="flex-1 min-w-max">
+									Onde reciclar
                 </Button>
                 <Button variant="outlined" color="primary" className="flex-1 min-w-max">
-                  Saiba mais
+									<a target='_blank' href="https://brasilescola.uol.com.br/biologia/reciclagem.htm">
+                  	Saiba mais
+									</a>
                 </Button>
               </div>
             </div>

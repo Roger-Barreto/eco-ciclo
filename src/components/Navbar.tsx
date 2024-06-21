@@ -4,6 +4,10 @@ import React, { useState } from 'react';
 export default function NavBar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+	const onClickScrollUp = () => {
+    document.getElementById('start-section')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
 	const onClickScrollDown = (id: string) => {
 		document.getElementById(`${id}`)?.scrollIntoView({ behavior: 'smooth' });
 	};
@@ -12,7 +16,9 @@ export default function NavBar() {
 		<nav
 			className={` fixed top-0 min-h-nav ${isMenuOpen ? 'max-h-screen' : 'max-h-nav'} lg:max-h-nav flex flex-col items-center w-full bg-[#000000] bg-opacity-30 border-b border-secondary border-opacity-40 transition-all duration-300 ease-in-out overflow-hidden z-50 backdrop-blur-[3px]`}>
 			<div className="flex items-center justify-between px-4 min-h-nav h-nav max-w-[90vw] w-full">
-				<img src="horizontal-logo.svg" alt="logo" />
+				<button type='button' onClick={onClickScrollUp}>
+					<img src="horizontal-logo.svg" alt="logo" />
+				</button>
 				<ul className={`hidden lg:flex gap-8 font-poppins font-normal lg:flex-row`}>
 					<li className="hover:text-secondary">
 						<button role="a" onClick={() => onClickScrollDown('statistics-section')}>
