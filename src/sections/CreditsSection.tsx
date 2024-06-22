@@ -18,7 +18,7 @@ export default function CreditsSection() {
 						</p>
 					</div>
 					<div className="flex flex-col sm:max-w-sm w-full sm:w-1/4 ">
-						<strong>Colaboradores:</strong>
+						<strong>Desenvolvedores:</strong>
 						<p className="text-[12px] opacity-70 font-normal leading-normal sm:text-left">
 							Roger Santos Barreto, Rodrigo Maganha Stramantinoli, Felipe Evaristo dos Santos, Lucas Dalavale Fabretti e
 							Rafael Felipe Oliveira Ferrari
